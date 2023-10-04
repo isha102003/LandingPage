@@ -1,0 +1,175 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+.navbar{
+    position: relative;
+    display: flex;
+    top: 0px;
+    align-items: center;
+}
+.navbar::before{
+    background-color: black;
+    content: "";
+    z-index: -1;
+    position:absolute;
+    height: 101%;
+    width: 101%;
+    top:0px;
+    left:0px;
+    /* opacity: 0.8; */
+}
+/* Navigation Bar: Logo and Image */
+#logo {
+    margin: 11px 33px;
+}
+#logo img {
+    border-radius: 40%;
+    margin: 3px 6px;
+    height: 41px;
+}
+/* Navigation Bar: List Styling */
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    font-size: 1.4rem;
+    list-style: none;
+}
+.navbar ul li a{
+    display: block;
+    color: white;
+    padding: 3.5px 21px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+#home-section{
+   flex-direction: column;
+}
+.home-para{
+    transform: translate(-50%,-50%);
+    left: 50%;
+    position: absolute;
+    top:40%;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 1.0rem;
+}
+.home-main img{
+    height: 451px;
+    width: 1520px;
+} 
+#home-section h1{
+    color: white;
+    /* text-transform: uppercase !important; */
+    text-align: center;
+    padding: 0px;
+    font-family: "Miss Magnolia Script", "Bradley Hand", cursive;
+    font-size: 3.1rem;
+    margin-top: 0%;
+}
+#home-section p{
+    color: white;
+    font-family: 'Bree Serif',serif;
+}
+#id1{
+    padding-top: 2.0px;
+    padding-bottom: 20px;
+    font-size: 1.0rem;
+    text-align: center;
+}
+#id2{
+    padding-top: 15px;
+    font-size: 1.3rem;
+    text-align: left;
+}
+#id3{
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+/*Services Section*/
+.services-container {
+    background-color:rgb(251, 220, 220);
+    padding: 4px 10x;
+    /* height: 150%; */
+}
+#services{
+    margin: 34px;
+    display: flex;
+    /* padding: 35px; */
+}
+#services .box{
+    border:2px solid slategrey;
+    padding: 34px;
+    margin: 3px 10px;
+    border-radius: 23px;
+    background-color:rgb(241, 244, 247);
+    margin-bottom: 20px;
+}
+#services .box img{
+    height:160px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: 'Bree Serif',serif ;
+    font-weight: 500;
+}
+.h-primary {
+    font-size: 3.0rem;
+    color: black;
+    font-weight: bolder;
+    padding: 13px;
+    font-family: "Miss Magnolia Script", "Bradley Hand", cursive;
+}
+.h-secondary{
+    font-family: "Miss Magnolia Script", "Bradley Hand", cursive;
+    font-size: 2.1rem;
+    padding: 12px;
+}
+.center{
+    text-align: center;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.7;
+    background: url(contact.jpg) no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
